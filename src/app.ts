@@ -1,4 +1,4 @@
- import express from 'express';
+import express from 'express';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import cors from 'cors';
@@ -22,6 +22,7 @@ app.get<{}, MessageResponse>('/', (req, res) => {
   });
 });
 
+app.use('/api/v1', api);
 
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
