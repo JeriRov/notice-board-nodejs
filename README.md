@@ -34,6 +34,17 @@ Development utilities:
   * Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
 * [supertest](https://www.npmjs.com/package/supertest)
   * HTTP assertions made easy via superagent.
+## Requirements
+.env and for tests .env.test
+```dotenv
+PORT=
+NODE_ENV=
+MONGO_HOST=
+MONGO_USERNAME=
+MONGO_PASSWORD=
+MONGO_DBNAME=
+ACCESS_TOKEN_SECRET=
+```
 
 ## Setup
 
